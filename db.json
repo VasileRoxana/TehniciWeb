@@ -1,0 +1,34 @@
+{
+  "banc": [
+    {
+      "name": "",
+      "img": "http://www.ziarulactualitatea.ro/wp-content/uploads/2018/01/3.png",
+      "id": 3
+    },
+    {
+      "name": "",
+      "img": "https://media.ciao.ro/wp-content/uploads/2018/12/Bancuri-seci.-Top-10-cele-mai-scurte-bancuri-seci-la-care-sigur-vei-rade-la-cat-de-STUPIDE-sunt-.png",
+      "id": 4
+    },
+    {
+      "name": "",
+      "img": "http://fs66.trilulilu.ro/imgs/grecumariana295/bancuri-cu-bula-1-1_521696a8c9eb25.jpg?size=original",
+      "id": 5
+    },
+    {
+      "name": "",
+      "img": "https://adevarul.ro/assets/adevarul.ro/MRImage/2015/02/23/54eb6fed448e03c0fde97594/646x404.jpg",
+      "id": 6
+    },
+    {
+      "name": "",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUk2QXkq0bgh_pd1RRJ5ftd9ezIEg06P7ltYYFIObtn1FAKGJr7w",
+      "id": 7
+    },
+    {
+      "name": "",
+      "img": "http://www.bancuripedia.com/images/seci/seci_4561.png",
+      "id": 8
+    }
+  ]
+}
