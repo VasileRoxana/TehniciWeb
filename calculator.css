@@ -1,0 +1,125 @@
+body{
+    background-image: linear-gradient(#bae9e5, #d993e7);
+
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.container{
+    display: grid;
+    background-image: linear-gradient(#bae9e5, #d993e7);
+    height: 620px;
+    width: 1340px;
+    grid-template-rows: [line1] 1fr [line2] 3fr [line3] 1fr;
+    grid-template-columns: [col1] 1fr [col2] 2fr [col3] 1fr; 
+}
+.main{
+    grid-column: col2;
+    grid-row: line2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(#bae9e5, #d993e7);
+    width: 325px;
+    border-radius: 8px;
+}
+.back{
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 5px;
+    justify-self: start;
+    align-self: center;
+}
+.butonBack{
+    font-size: 20px;
+    grid-column: 2;
+    grid-row: 1;
+    text-decoration: none;
+    background-color: #aaaaaa1a;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.details{
+    grid-column: 1;
+    grid-row: 2/4;
+    white-space: pre;
+    font-size: 20px;
+    color: rgb(73, 71, 71);
+    justify-self: start;
+}
+.footer{
+    grid-column: col3;
+    grid-row: line3;
+    color: rgb(88, 88, 88);
+    position: sticky;
+    bottom: 0;
+}
+.button{
+    background-color:rgb(40, 167, 148);
+    border: 1px solid rgb(103, 112, 111);
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.button1{
+    background-color: rgb(137, 203, 189);
+    border: 1px solid rgb(103, 112, 111);
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+.container .button:hover {
+    background-color: #efefefb3;
+    color: black;
+  }
+  .container .button1:hover {
+    background-color: #efefefb3;
+    color: black;
+  }
+.text{
+    width: 310px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    font-size: 25px;
+    font-style: "Helvetica";
+ 
+}
+@media only screen and (max-width: 760px){
+    .butonBack{width: 16.7%;}
+    .text{width: 33.3%;}
+    .main{width: auto;}
+    .details{width: 83.46%;}
+    .footer{width: 100%;}
+}
+@media only screen and (max-width: 1280px){
+    .butonBack{width: 16.7%;}
+    .text{width: 33.3%;}
+    .main{width: auto;}
+    .details{width: 83.46%;}
+    .footer{width: 100%;}
+}
+@media only screen and (min-width: 1280px){
+    .butonBack{width: 16.7%;}
+    .text{width: 33.3%;}
+    .main{width: auto;}
+    .details{width: 83.46%;}
+    .footer{width: 100%;}
+}
+@media only screen and (max-width: 760px) {
+    .container{
+        width: auto;}
+    
+}

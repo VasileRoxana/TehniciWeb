@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="back">
+        <header>
+            <a href="paginaPrincipala.html" class="butonBack">Inapoi la pagina prncipala</a>
+        </header>
+    </div>
+        <div class="main">
+            <form id="form" name="form"></form>
+                <input class="text" id="text" name="text" value=""> <br>
+                <br>
+                <div class="butoane">
+                    <input class="button1" name="CE" value="CE" onclick="stergeTot()" type="button">
+                    <input class="button1" name="C" value="C" onclick="sterge()" type="button">
+                    <input class="button1" name="/" value="/" onclick="insert('/')" type="button">
+                    <input class="button1" name="*" value="*" onclick="insert('*')" type="button">
+                    <br>
+                    <input class="button" name="7" value="7" onclick="insert(7)" type="button">
+                    <input class="button" name="8" value="8" onclick="insert(8)" type="button">
+                    <input class="button" name="9" value="9" onclick="insert(9)" type="button">
+                    <input class="button1" name="_" value="_" onclick="insert('-')" type="button">
+                    <br>
+                    <input class="button" name="4" value="4" onclick="insert(4)" type="button">
+                    <input class="button" name="5" value="5" onclick="insert(5)" type="button">
+                    <input class="button" name="6" value="6" onclick="insert(6)" type="button">
+                    <input class="button1" name="+" value="+" onclick="insert('+')" type="button">
+                    <br>
+                    <input class="button" name="1" value="1" onclick="insert(1)" type="button">
+                    <input class="button" name="2" value="2" onclick="insert(2)" type="button">
+                    <input class="button" name="3" value="3" onclick="insert(3)" type="button">
+                    <input class="button1" name="=" value="=" onclick="egal()" type="button">
+                    <br>
+                    <input class="button" name="0" value="0" onclick="insert(0)" type="button">
+                    <input class="button" name="." value="." onclick="insert('.')" type="button">
+                </div>
+        </div>
+        <div class="details">
+            <details>
+                <summary>Detalii calculator</summary>
+                Acesta efectueaza urmatoarele calcule:
+                    adunare(+), 
+                    scadere(-), 
+                    inmultire(*), 
+                    impartire(/)
+                Prezinta urmatoarele functii:
+                    sterge ultima cifra(C), 
+                    sterge tot (CE) 
+            </details> 
+        </div> <br>
+        <div class="footer">
+            <footer style="text-align: right;">
+                <p>Pagina realizata de: Vasile Roxana Andreea
+                <br> Facultatea de Matematica si Informatica, CTI, grupa 352
+                <br>Contact: <a href="mailto:vasile.roxana.7a@gmail.com">
+                vasile.roxana.7a@gmail.com</a>.</p>
+            </footer>
+        </div>
+        </div>
+</body>
+
+</html>

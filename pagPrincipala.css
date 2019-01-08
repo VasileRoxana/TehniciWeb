@@ -1,0 +1,79 @@
+body{
+    background-image: linear-gradient(to bottom right, #fbeb3a, #099ded);
+    text-align: center;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.container{
+    display: grid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    grid-template-columns: 2fr 2fr 4fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+.header{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: start; 
+}
+.navigare{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: start;
+    align-self: start; 
+    font-size: 20px;
+}
+.buton{
+    font-size: 18px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    background-color: #aaaaaa1a;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.container .buton:hover {
+    background-color: #efefefb3;
+    color: black;
+  }
+.section{
+    justify-self: center;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 1;
+}
+.input{
+    justify-self: center;
+    align-self: center;
+    padding: 8px 15px;
+    font-size: 15px;
+}
+.imagini{
+    justify-self: center;
+    align-self: center;
+}
+.footer{
+    grid-column: 4;
+    grid-row: end;
+    justify-self: end;
+    align-self: end;
+    color: rgb(88, 88, 88);
+    justify-self: end;
+    align-self: end;
+    position: sticky;
+    bottom: 0;
+    font-size: 15px; 
+}
+@media only screen and (max-width: 760px) {
+    .container{
+        width: auto;
+    }
+
+}
