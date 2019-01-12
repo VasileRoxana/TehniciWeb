@@ -8,8 +8,8 @@ img{
 }
     .container{
         display: grid;
-        grid-template-columns: [col1] 334px [col2] 667px [col3] 334px;
-        grid-template-rows: [line1] 150px [line2] 300px [line3] 150px;
+        grid-template-columns: [col1] 1fr [col2] 2fr [col3] 1fr;
+        grid-template-rows: [line1] 1fr [line2] 2fr [line3] 1fr;
         background-image: linear-gradient(to bottom right, #e373cd, yellow);
         font-family: Georgia, 'Times New Roman', Times, serif;
         height: 620px;
@@ -49,8 +49,8 @@ img{
     color: black;
   } 
 .ghicitoare{
-    grid-column: 2;
-    grid-row: 2;
+    grid-column: col2;
+    grid-row: line2;
     justify-self: center;
     align-self: center;
 }
@@ -73,13 +73,17 @@ img{
     font-size: 20px;
 }
 .raspuns{
-    grid-column: 2;
-    grid-row: 3;
+    grid-column: col2;
+    grid-row: line3;
     justify-self: center;
     position: sticky;
     bottom: 0;
 }
-
+.article{
+    grid-column: col1;
+    grid-row: line2;
+    justify-self: center;
+}
 .afiseazaRaspuns{
     text-align: center;
     justify-self: center;
@@ -96,15 +100,21 @@ img{
     font-size: 15px;
 }
 @media only screen and (max-width: 760px){
-    .back{width: 8.2%;}
-    .butoane{width: 18.48%;}
-    .ghicitoare{width: 25%;}
-    .textGhicitoare{width: 42.6%;}
-    .spatiuRaspuns{width: 56.8%;}
-    .afiseazaRaspuns{width: 20%}
-    .raspuns{width: 85%;}
-    .footer{width: 100%;}
+    .col1{ width: 10%;}
+    .col2{ width: 20%;}
+    .col3{ width: 15%;}
+    .line1{ width: 15%;}
+    .line2{ width: 30%;}
+    .line3{ width: 18%;}
 }
+@media only screen and (max-width: 1280px){
+    .col1{ width: 10%;}
+    .col2{ width: 20%;}
+    .col3{ width: 15%;}
+    .line1{ width: 15%;}
+    .line2{ width: 30%;}
+    .line3{ width: 18%;}
+} 
 @media only screen and (max-width: 760px) {
     .container{
         width: auto;

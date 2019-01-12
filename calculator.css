@@ -22,7 +22,6 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(#bae9e5, #d993e7);
     width: 325px;
     border-radius: 8px;
 }
@@ -46,7 +45,7 @@ img{
 }
 .details{
     grid-column: 1;
-    grid-row: 2/4;
+    grid-row: 3;
     white-space: pre;
     font-size: 20px;
     color: rgb(73, 71, 71);
@@ -56,8 +55,8 @@ img{
     grid-column: col3;
     grid-row: line3;
     color: rgb(88, 88, 88);
-    position: sticky;
-    bottom: 0;
+    /* position: sticky; */
+  
 }
 .button{
     background-color:rgb(40, 167, 148);
@@ -98,26 +97,22 @@ img{
  
 }
 @media only screen and (max-width: 760px){
-    .butonBack{width: 16.7%;}
-    .text{width: 33.3%;}
-    .main{width: auto;}
-    .details{width: 83.46%;}
-    .footer{width: 100%;}
+    .col1{ width: 10%;}
+    .col2{ width: 40%;}
+    .col3{ width: 15%;}
+    .line1{ width: 15%;}
+    .line2{ width: 50%;}
+    .line3{ width: 18%;}
 }
 @media only screen and (max-width: 1280px){
-    .butonBack{width: 16.7%;}
-    .text{width: 33.3%;}
-    .main{width: auto;}
-    .details{width: 83.46%;}
-    .footer{width: 100%;}
-}
-@media only screen and (min-width: 1280px){
-    .butonBack{width: 16.7%;}
-    .text{width: 33.3%;}
-    .main{width: auto;}
-    .details{width: 83.46%;}
-    .footer{width: 100%;}
-}
+    .col1{ width: 10%;}
+    .col2{ width: 40%;}
+    .col3{ width: 15%;}
+    .line1{ width: 15%;}
+    .line2{ width: 50%;}
+    .line3{ width: 18%;}
+} 
+
 @media only screen and (max-width: 760px) {
     .container{
         width: auto;}
